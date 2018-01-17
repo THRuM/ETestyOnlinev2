@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseTemplate" template="/WEB-INF/template/base.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+    </definition>
+
+    <definition name="addQuestion" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/addQuestion.jsp" />
+        <put-attribute name="title" value="title.add.question" />
+    </definition>
+
+    <definition name="allQuestions" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/allQuestions.jsp" />
+        <put-attribute name="title" value="header.teacher.questions" />
+    </definition>
+
+    <definition name="allPrincipals" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/allPrincipals.jsp" />
+        <put-attribute name="title" value="title.all.teachers" />
+    </definition>
+
+    <definition name="allTeachersClaims" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/allTeachersClaims.jsp" />
+        <put-attribute name="title" value="title.all.teachers.claims" />
+    </definition>
+
+    <definition name="beginTest" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/beginTest.jsp" />
+        <put-attribute name="title" value="general.begin.test" />
+    </definition>
+
+    <definition name="testQuestion" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/testQuestion.jsp" />
+        <put-attribute name="header" value="/WEB-INF/template/testHeader.jsp" />
+        <put-attribute name="title" value="title.test" />
+    </definition>
+
+    <definition name="testReview" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/testReview.jsp" />
+        <put-attribute name="title" value="test.rewiew" />
+    </definition>
+
+    <definition name="testEnd" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/testEnd.jsp" />
+        <put-attribute name="title" value="test.end" />
+    </definition>
+
+    <definition name="allTests" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/allTests.jsp" />
+        <put-attribute name="title" value="header.teacher.tests" />
+    </definition>
+
+    <definition name="testView" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/testView.jsp" />
+        <put-attribute name="title" value="title.test.more" />
+    </definition>
+
+    <definition name="allUsers" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/allUsers.jsp" />
+        <put-attribute name="title" value="teacher.all.users" />
+    </definition>
+
+    <definition name="userProfile" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/userProfile.jsp" />
+        <put-attribute name="title" value="title.profile" />
+    </definition>
+
+    <definition name="allAdminClaims" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/allAdminClaims.jsp" />
+        <put-attribute name="title" value="title.all.claims.promote" />
+    </definition>
+
+    <definition name="adminClaimView" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/adminClaimView.jsp" />
+        <put-attribute name="title" value="general.claim.promote" />
+    </definition>
+
+    <definition name="claimPromote" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/claimPromote.jsp" />
+        <put-attribute name="title" value="admin.claim.header" />
+    </definition>
+
+    <definition name="passwordChange" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/passwordChange.jsp" />
+        <put-attribute name="title" value="password.change.header" />
+    </definition>
+
+    <definition name="index" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+        <put-attribute name="title" value="title.main" />
+    </definition>
+
+    <definition name="adminPanel" extends="baseTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/adminPanel.jsp" />
+        <put-attribute name="title" value="header.admin.panel" />
+    </definition>
+
+    <definition name="addCategory" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/addCategory.jsp" />
+        <put-attribute name="title" value="category.header" />
+    </definition>
+
+    <definition name="allCategories" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/allCategories.jsp" />
+        <put-attribute name="title" value="category.all.header" />
+    </definition>
+
+    <definition name="confirm" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/confirm.jsp" />
+        <!--<put-attribute name="header" value="/WEB-INF/template/testHeader.jsp" />-->
+        <put-attribute name="title" value="title.confirm" />
+    </definition>
+
+    <definition name="passwordResetRequest" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/passwordResetRequest.jsp" />
+        <!--<put-attribute name="header" value="/WEB-INF/template/testHeader.jsp" />-->
+        <put-attribute name="title" value="password.change.header" />
+    </definition>
+
+    <definition name="passwordReset" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/passwordReset.jsp" />
+        <!--<put-attribute name="header" value="/WEB-INF/template/testHeader.jsp" />-->
+        <put-attribute name="title" value="password.change.header" />
+    </definition>
+
+    <definition name="allOrgUnits" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/allOrgUnits.jsp" />
+        <put-attribute name="title" value="orgUnits.header" />
+    </definition>
+
+    <definition name="addOrgUnit" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/addOrgUnit.jsp" />
+        <put-attribute name="title" value="orgUnits.add.header" />
+    </definition>
+
+    <definition name="teacherPanel" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/teacherPanel.jsp" />
+        <put-attribute name="title" value="header.teacher.panel" />
+    </definition>
+
+    <definition name="testSpecs" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/testSpecs.jsp" />
+        <put-attribute name="title" value="testParams.header" />
+    </definition>
+
+    <definition name="exception-page" extends="baseTemplate" >
+        <put-attribute name="body" value="/WEB-INF/views/exception-page.jsp" />
+        <put-attribute name="title" value="error.header" />
+    </definition>
+
+    <definition name="login" template="/WEB-INF/views/login.jsp" />
+    <definition name="register" template="/WEB-INF/views/register.jsp" />
+</tiles-definitions>
