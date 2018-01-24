@@ -7,7 +7,13 @@ For test and fun purposes application is hosted on Heroku: [Link](http://e-testy
 For proper functioning MongoDB database and SMTP server are needed, fill the `config.properties` in `/src/main/resources` with the proper values.
 Originally the mLab was used as a hosting for MongoDB and Gmail as SMTP server.
 
-TODO: Polulate DB
+## Database preparation
+Unzip file `etestyonline.zip` and run command:
+```
+mongorestore -h <host> -d etestyonline -u <user> -p <password> etestyonline
+```
+
+This will set up sample user with ADMIN rights: admin@etestyonline.pl : zaq12wsx
 
 ## Getting Started
 This is maven project, check out it and run:
