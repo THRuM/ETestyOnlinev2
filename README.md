@@ -19,9 +19,9 @@ $ mvn clean install
 * Spring MVC - Web framework
 * Spring Security - Security framework
 * Spring Data MongoDB - MongoDB integration
-* MongoDB - Persistance layer
-* Apache Tiles - JSP Engine
-* Semantic UI - CSS Framework
+* MongoDB - Persistence layer
+* Apache Tiles - Templating framework 
+* Semantic UI - CSS framework
 * Maven - Dependency Management
 
 
